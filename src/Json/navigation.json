@@ -1,0 +1,195 @@
+[
+    {
+      "title": "Home",
+      "pathname":"",
+      "subMenus": []
+    },
+    {
+      "title": "About ORI",
+      "pathname":"",
+      "subMenus": [
+        {
+          "title": "About ORI",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        },
+        {
+          "title": "FAQ",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        },
+        {
+          "title": "ORI Mission",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        },
+        {
+          "title": "Historical Background",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        },
+        {
+          "title": "Meet the Directors",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        },
+        {
+          "title": "ORI Staff",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        },
+        {
+          "title": "Office of the Director",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        },
+        {
+          "title": "Division of Investigative Oversight",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        },
+        {
+          "title": "Contact Us",
+          "pathname":"https://ori.hhs.gov/about-ori"
+        }
+      ]
+    },
+    {
+      "title": "News & Events",
+      "subMenus": [
+        {
+          "title": "ORI Updates"
+        },
+        {
+          "title": "Conferences"
+        },
+        {
+          "title": "ORI Newsletters"
+        },
+        {
+          "title": "ORI Data"
+        }
+      ]
+    },
+    {
+      "title": "Research Misconduct",
+      "subMenus": [
+        {
+          "title":"Case Summaries",
+          "pathname":"https://ori.hhs.gov/content/case_summary"
+        },
+        {
+          "title": "Handling Misconduct",
+          "nestedSubMenu": [
+            {
+              "title":"Technical Assistance",
+              "pathname": "https://ori.hhs.gov/agreement"
+            },
+            {
+              "title":"Investigations",
+              "pathname": "https://ori.hhs.gov/investigations"
+            },
+            {
+              "title": "Handling Allegations",
+              "pathname": "https://ori.hhs.gov/agreement"
+            },
+            {
+              "title":"Technical Assistance",
+              "pathname": "https://ori.hhs.gov/investigations"
+            }
+          ]
+        },
+        {
+          "title": "Forensic Tools",
+          "nestedSubMenu": [
+            {
+              "title":"Droplets",
+              "pathname": "https://ori.hhs.gov/agreement"
+            },
+            {
+              "title":"Forensic Actions",
+              "pathname": "https://ori.hhs.gov/investigations"
+            },
+            {
+              "title": "Samples",
+              "pathname": "https://ori.hhs.gov/agreement"
+            },
+            {
+              "title":"Help",
+              "pathname": "https://ori.hhs.gov/investigations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "RCR Resources",
+      "subMenus": [
+        {
+          "title": "RCR Objectives",
+          "pathname": "https://ori.hhs.gov/agreement"
+        },
+        {
+          "title": "Infographics",
+          "pathname": "https://ori.hhs.gov/agreement"
+        },
+        {
+          "title": "General Resources",
+          "pathname": "https://ori.hhs.gov/agreement"
+        },
+        {
+          "title": "Human subject Research",
+          "pathname": "https://ori.hhs.gov/agreement"
+        }
+      ]
+    },
+    {
+      "title": "Programs",
+      "subMenus": [
+        {
+          "title": "RIO Training",
+          "pathname": "https://ori.hhs.gov/agreement",
+          "nestedSubMenu": [
+            {
+              "title":"RIO Boot camp",
+              "pathname":""
+            },
+            {
+              "title":"RIO Video",
+              "pathname":""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Policies & Regulations",
+      "subMenus": [
+        {
+          "title": "Federal Policies",
+          "pathname": "https://ori.hhs.gov/agreement"
+        },
+        {
+          "title": "PHS Policies",
+          "pathname": "https://ori.hhs.gov/agreement"
+        },
+        {
+          "title": "ORI Policies",
+          "pathname": "https://ori.hhs.gov/agreement"
+        },
+        {
+          "title": "Statutes & Regulations",
+          "pathname": "https://ori.hhs.gov/agreement"
+        }
+      ]
+    },
+    {
+      "title": "Assurance Program",
+      "subMenus": [
+        {
+          "title": "Small Organization Statement",
+          "pathname": "https://ori.hhs.gov/small-organization-statement"
+        },
+        {
+          "title": "Foreign Organization Statement",
+          "pathname": "https://ori.hhs.gov/foreign-organization-statement"
+        },
+        {
+          "title": "Agreement",
+          "pathname": "https://ori.hhs.gov/agreement"
+        }
+      ]
+    }
+  ]
