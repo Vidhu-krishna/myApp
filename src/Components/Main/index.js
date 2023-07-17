@@ -12,7 +12,7 @@ const Main =() =>{
     console.log("Data submitted: ", formData);
   };
 
-  const ErrorListTemplate = (props) =>{
+  const errorListTemplate = (props) =>{
     const { errors } = props;
     console.log(errors);
     return (
@@ -38,6 +38,12 @@ const Main =() =>{
       </Grid>
     )
   }
+  const customValidator =(formData, errors)=> {
+    if (!formData.firstname) {
+      errors.firstName.addError("Enter firstName");
+    }
+    return errors;
+  }
 
   return(
         <Box component="main" sx={{ padding:'5rem 1rem' }}>
@@ -48,7 +54,7 @@ const Main =() =>{
             uiSchema={uiSchema}
             templates={{ObjectFieldTemplate}}
             showErrorList={true}
-            ErrorList={ErrorListTemplate}
+            ErrorList={errorListTemplate}
             onError={onError}
             onSubmit={onSubmit}
             formData={formData}

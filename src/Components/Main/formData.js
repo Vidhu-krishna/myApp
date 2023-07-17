@@ -1,16 +1,19 @@
 export const schema = {
+  $schema: 'http://json-schema.org/draft-04/schema#',
   title: "Application Form",
   description: "",
   type: "object",
-  required: ["firstName", "lastName"],
+  required: [ "firstName","telephone", "email"],
   properties: {
     firstName: {
       type: "string",
-      title: "First name"
+      title: "First name",
+      minLength:3
     },
     lastName: {
       type: "string",
-      title: "Last name"
+      title: "Last name",
+      minLength:3
     },
     dob: {
       type: "string",
@@ -22,7 +25,7 @@ export const schema = {
       title: "Gender",
       enum: ["Male", "Female", "TransGender"]
     },
-    select: {
+    martialStatus: {
       type: "boolean",
       title: "Martial Status"
     },
@@ -30,7 +33,7 @@ export const schema = {
       type: "string",
       title: "Father/Husband name"
     },
-    qualificcation: {
+    qualification: {
       title: "Educational Qualification",
       type: "string",
       default: "graduate",
@@ -50,12 +53,14 @@ export const schema = {
     telephone: {
       type: "string",
       title: "Mobile Number",
-      minLength: 10
+      pattern: "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$", //this pattern accepts us phone numbers
+      minLength:10,
     },
     email: {
       type: "string",
       title: "Email Id",
-      format: "email"
+      format: "email",
+      pattern: "^\\S+@\\S+\\.\\S+$",
     },
     ethinicity: {
       title: "Ethinicity",
@@ -83,24 +88,29 @@ export const schema = {
 }
 
 export const uiSchema = {
-    radio: {
-      "ui:widget": "radio"
-    },
-    select: {
-      "ui:widget": "select"
-    },
-    gender: {
-      "ui:widget": "radio",
+  firstName: {
+    "ui:autofocus": true,
+    "ui:emptyValue": "",
+  },
+  telephone:{
       "ui:options": {
-        inline: true
+        "inputType": "tel"
       }
+  },
+  gender:{
+    "ui:widget": "radio", 
+    "ui:options": {
+     inline: true
     }
+  },
+  ethinicity:{
+    "ui:widget": "select"
+  },
+  martialStatus:{
+    "ui:widget": "select"
+  }
 }
-
-export const formData = {
-  firstName:"",
-  lastName:"",
-  telephone:"9686764825",
-  radio: true,
-  select: false
+export const formData ={
+  firstName:'Lauren',
+  lastName:'Guerra'
 }
